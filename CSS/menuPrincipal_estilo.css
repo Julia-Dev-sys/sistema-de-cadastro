@@ -1,0 +1,51 @@
+body{
+   background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    
+
+}
+span{
+    font-size:20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+a{
+  text-decoration:none; 
+  color: #0062cc;
+  border-bottom:2px solid #0062cc;
+}
+.box{
+    padding:60px 0px;
+}
+
+.box-part{
+    
+    border-radius:20px;
+    padding:10px 10px;
+    margin:10px 10px;
+    text-align: center;
+    
+      
+    
+}
+.text{
+    margin:30px 0px;
+}
+
+.fa{
+     color:#4183D7;
+}
+
+.title{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+button{
+    width: 70px;
+    height: 40px;
+     
+}
+

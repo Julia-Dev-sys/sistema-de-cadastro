@@ -1,0 +1,63 @@
+turmas
+
+matricula
+horario inicio
+horario final
+dias
+data de inicio
+data de termino
+turno
+professor
+alunos
+
+professor
+
+nome
+cpf
+cep
+rua
+bairro
+numero
+complemento
+cidade
+uf
+telefone
+email
+data nascimento
+modalidade
+matricula
+
+alunos
+
+nome
+cpf
+cep
+rua
+bairro
+numero
+complemento
+cidade
+uf
+telefone
+email
+data nascimento
+matricula
+
+
+telas
+
+alunos
+
+visualizar turmas
+
+professores
+
+visualizar turmas
+
+secretarios
+
+visualizar todas as turmas
+visualizar todos os alunos
+visualizar todos os professores
+cadastrar professores/alunos/turmas
+criar turmas

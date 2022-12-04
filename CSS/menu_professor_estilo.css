@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+
+body{
+    margin: 0;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #212529;
+    text-align: left;
+    background-color: #f5faf6;
+}
+
+#principal{
+
+    text-align: right;
+    margin-top: 50px;
+}
+
+#botoes{
+
+    text-align: center;
+    padding-right: 50px;
+}
+
+#exibir_cadastro{
+
+    text-align: center;
+}
+
+
+
+#titulo{
+
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #585a5d43;
+    padding: 20px 10px;
+    
+    
+}
+
+#btn{
+    background-color: #4f51527f;
+    border-color: #f5faf6;
+    color: black;
+}

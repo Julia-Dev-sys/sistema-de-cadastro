@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/menu_professor_estilo.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+    <title>Menu professor</title>
+</head>
+
+<div id="titulo">
+    <nav>
+        <h4>Cadastro de professores</h4>
+    </nav>
+</div>
+
+<body background="img/back.jpg">
+    <div id="principal">
+        <form id="formulario">
+            <div class="form-group row">
+                <label for="label_nome_professor" class="col-md-4 col-form-label text-md-right">Nome:</label>
+                <div class="col-md-4">
+                    <input type="text" id="input_nome_professor" class="form-control" name="nome_professor"
+                        maxlength="64" onblur="verificarCampoNome('input_nome_professor','span_nome_professor')"
+                        onkeydown="contemSobrenome('input_nome_professor','span_nome_professor')">
+                    <span id="span_nome_professor"></span>
+                </div>
+            </div>
+            <br>
+            <div class="form-group row">
+                <label for="text" class="col-md-4 col-form-label text-md-right">CPF:</label>
+                <div class="col-md-4">
+                    <input type="text" id="input_cpf_professor" class="form-control" maxlength="14" name="cpf_professor"
+                        onkeydown="preencherCpf('input_cpf_professor')"
+                        onblur="verificarCampoCpf('input_cpf_professor','span_cpf_professor')">
+                    <span id="span_cpf_professor"></span>
+                </div>
+            </div>
+            <br>
+            <div class="form-group row">
+                <label for="text" class="col-md-4 col-form-label text-md-right">CEP:</label>
+                <div class="col-md-4">
+                    <input type="text" id="input_cep_professor" class="form-control" maxlength="9" name="cep_professor"
+                        onkeydown="preencherCep('input_cep_professor')"
+                        onblur="verificarCampoCep('input_cep_professor','span_cep_professor')">
+                    <span id="span_cep_professor"></span>
+                </div>
+            </div>
+            <br>
+            <div class="form-group row">
+                <label for="text" class="col-md-4 col-form-label text-md-right">Rua:</label>
+                <div class="col-md-4">
+                    <input type="text" id="input_rua_professor" class="form-control" maxlength="64" name="rua_professor"
+                        onblur="verificarCampoRua('input_rua_professor','span_rua_professor')">
+                    <span id="span_rua_professor"></span>
+                </div>
+            </div>
+            <br>
+            <div class="form-group row">
+                <label for="text" class="col-md-4 col-form-label text-md-right">Bairro:</label>
+                <div class="col-md-4">
+                    <input type="text" id="input_bairro_professor" class="form-control" maxlength="64"
+                        name="bairro_professor"
+                        onblur="verificarCampoBairro('input_bairro_professor','span_bairro_professor')">
+                    <span id="span_bairro_professor"></span>
+                </div>
+            </div>
+            <br>
+            <div class="form-group row">
+                <label for="text" class="col-md-4 col-form-label text-md-right">Número:</label>
+                <div class="col-md-4">
+                    <input type="text" id="input_numero_professor" class="form-control" maxlength="10"
+                        name="numero_professor"
+                        onblur="verificarCampoNumero('input_numero_professor','span_numero_professor')">
+                    <span id="span_numero_professor"></span>
+                </div>
+            </div>
+            <br>
+            <div class="form-group row">
+                <label for="text" class="col-md-4 col-form-label text-md-right">Complemento:</label>
+                <div class="col-md-4">
+                    <input type="text" id="input_complemento_professor" class="form-control" maxlength="64"
+                        name="complemento_professor"
+                        onblur="verificarCampoComplemento('input_complemento_professor','span_complemento_professor')">
+                    <span id="span_complemento_professor"></span>
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <label for="text" class="col-md-4 col-form-label text-md-right">Cidade:</label>
+                <div class="col-md-4">
+                    <input type="text" id="input_cidade_professor" class="form-control" maxlength="64"
+                        name="cidade_professor"
+                        onblur="verificarCampoCidade('input_cidade_professor','span_cidade_professor')">
+                    <span id="span_cidade_professor"></span>
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <label for="text" class="col-md-4 col-form-label text-md-right">UF:</label>
+                <div class="col-md-4">
+                    <select id="select_uf_professor" class="form-control"
+                        onblur="verificarCampoUf('select_uf_professor','span_uf_professor')">
+                        <option value=""></option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AM">AM</option>
+                        <option value="AP">AP</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                    <span id="span_uf_professor"></span>
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <label for="text" class="col-md-4 col-form-label text-md-right">Telefone:</label>
+                <div class="col-md-4">
+                    <input type="text" id="input_telefone_professor" class="form-control" maxlength="16"
+                        name="telefone_professor" onkeydown="preencherTelefone('input_telefone_professor')"
+                        onblur="verificarCampoTelefone('input_telefone_professor','span_telefone_professor')">
+                    <span id="span_telefone_professor"></span>
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <label for="text" class="col-md-4 col-form-label text-md-right">E-mail:</label>
+                <div class="col-md-4">
+                    <input type="text" id="input_email_professor" class="form-control" maxlength="64"
+                        name="email_professor" onkeydown="preencherEmail('input_email_professor')"
+                        onblur="verificarCampoEmail('input_email_professor','span_email_professor')">
+                    <span id="span_email_professor"></span>
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <label for="date" class="col-md-4 col-form-label text-md-right">Data de
+                    nascimento:</label>
+                <div class="col-md-4">
+                    <input type="text" id="input_nascimento_professor" class="form-control" name="nascimento_professor"
+                        maxlength="10" onkeydown="preencherDataNascimento('input_nascimento_professor')"
+                        onblur="verificarCampoNascimento('input_nascimento_professor','span_nascimento_professor')">
+                    <span id="span_nascimento_professor"></span>
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <label for="text" class="col-md-4 col-form-label text-md-right">Matrícula:</label>
+                <div class="col-md-4">
+                    <input type="text" id="input_matricula_professor" class="form-control" maxlength="8"
+                        name="matricula_professor"
+                        onblur="verificarCampoMatricula('input_matricula_professor','span_matricula_professor')">
+                    <span id="span_matricula_professor"></span>
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <label for="text" class="col-md-4 col-form-label text-md-right">Modalidade:</label>
+                <div class="col-md-4">
+                    <select id="select_modalidade_professor" class="form-control"
+                        onblur="verificarCampoModalidade('select_modalidade_professor','span_modalidade_professor')">
+                        <option value=""></option>
+                        <option value="Musculação">Musculação</option>
+                        <option value="Natação">Natação</option>
+                        <option value="Localizada">Localizada</option>
+                        <option value="CrossFit">CrossFit</option>
+                        <option value="Yoga">Yoga</option>
+                    </select>
+                    <span id="span_modalidade_professor"></span>
+                </div>
+            </div>
+
+        </form>
+
+        <br>
+        <br>
+        <div id="botoes">
+            <button id="btn" type="submit" class="btn btn-primary"
+                onclick="cadastrarProfessor('input_nome_professor','input_cpf_professor','input_cep_professor','input_rua_professor','input_bairro_professor','input_numero_professor','input_complemento_professor','input_cidade_professor','select_uf_professor','input_telefone_professor','input_email_professor','input_nascimento_professor','input_matricula_professor','select_modalidade_professor')">
+                Registrar
+            </button>
+            <button id="btn" type="submit" class="btn btn-primary" onclick="exibirCadastroProfessor()">
+                Exibir
+            </button>
+            <button id="btn" type="submit" class="btn btn-primary" onclick="window.open('menuPrincipal.html','_self')">
+                Menu principal
+            </button>
+
+        </div>
+    </div>
+    </div>
+    <hr>
+    <div>
+        <span id="dados_professor"></span>
+    </div>
+
+
+
+
+
+    <script src="JS/script.js"></script>
+
+</body>
+
+</html>
